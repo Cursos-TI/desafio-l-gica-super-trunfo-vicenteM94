@@ -60,10 +60,10 @@ int main() {
     // Saída de dados
 
     printf("Dados da Carta 1:\n");
-    printf("Estado: %s - Código: %s - População: %lu - Área: %f - PIB: %f Pontos Turisticos: %d - Densidade Populacional: %f - PIB per Capita: %f\n", estado1, codigo1, populacao1, area1, pib1, pontos_turisticos1, densidade_Populacional1, pib_Per_Capita1);
+    printf("Estado: %s - Código: %s - População: %lu habitantes - Área: %.2f km² - PIB: %.2f R$ Pontos Turisticos: %d - Densidade Populacional: %.2f hab./km² - PIB per Capita: %.5f R$\n", estado1, codigo1, populacao1, area1, pib1, pontos_turisticos1, densidade_Populacional1, pib_Per_Capita1);
 
     printf("Dados da Carta 2:\n");
-    printf("Estado: %s - Código: %s - População: %lu - Área: %f - PIB: %f Pontos Turisticos: %d - Densidade Populacional: %f - PIB per Capita: %f\n", estado2, codigo2, populacao2, area2, pib2, pontos_turisticos2, densidade_Populacional2, pib_Per_Capita2);
+    printf("Estado: %s - Código: %s - População: %lu habitantes  - Área: %.2f km² - PIB: %.2f R$ Pontos Turisticos: %d - Densidade Populacional: %.2f hab./km² - PIB per Capita: %.5f R$\n", estado2, codigo2, populacao2, area2, pib2, pontos_turisticos2, densidade_Populacional2, pib_Per_Capita2);
 
     
 
@@ -90,7 +90,7 @@ int main() {
 
     switch (opcao) {
         case 1:
-            printf("População: Carta 1 (%lu) x Carta 2 (%lu)\n", populacao1, populacao2);
+            printf("População: Carta 1 (%lu hab) x Carta 2 (%lu hab)\n", populacao1, populacao2);
             if(populacao1 > populacao2) {
                 printf("Carta 1 venceu\n");
             } else if (populacao1 < populacao2) {
@@ -100,7 +100,7 @@ int main() {
             }
             break;
         case 2:
-            printf("Área: Carta 1 (%.2f) x Carta 2 (%.2f)\n", area1, area2);
+            printf("Área: Carta 1 (%.2f km²) x Carta 2 (%.2f km²)\n", area1, area2);
             if(area1 > area2) {
                 printf("Carta 1 venceu\n");
             } else if (area1 < area2) {
@@ -110,7 +110,7 @@ int main() {
             }
             break;
         case 3:
-            printf("PIB: Carta 1 (%.2f) x Carta 2 (%.2f)\n", pib1, pib2);
+            printf("PIB: Carta 1 (%.2f R$) x Carta 2 (%.2f R$)\n", pib1, pib2);
             if(pib1 > pib2) {
                 printf("Carta 1 venceu\n");
             } else if (pib1 < pib2) {
@@ -130,7 +130,7 @@ int main() {
             }
             break;
         case 5:
-            printf("Densidade Populacional: Carta 1 (%.2f) x Carta 2 (%.2f)\n", densidade_Populacional1, densidade_Populacional2);
+            printf("Densidade Populacional: Carta 1 (%.2f hab./km²) x Carta 2 (%.2f hab./km²)\n", densidade_Populacional1, densidade_Populacional2);
             if(densidade_Populacional1 > densidade_Populacional2) {
                 printf("Carta 1 venceu\n");
             } else if (densidade_Populacional1 < densidade_Populacional2) {
@@ -140,7 +140,7 @@ int main() {
             }
             break;
         case 6:
-            printf("PIB per Capita: Carta 1 (%.2f) x Carta 2 (%.2f)\n", pib_Per_Capita1, pib_Per_Capita2);
+            printf("PIB per Capita: Carta 1 (%.2f R$) x Carta 2 (%.2f R$)\n", pib_Per_Capita1, pib_Per_Capita2);
             if(pib_Per_Capita1 > pib_Per_Capita2) {
                 printf("Carta 1 venceu\n");
             } else if (pib_Per_Capita1 < pib_Per_Capita2) {
